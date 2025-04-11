@@ -1,0 +1,129 @@
+
+
+/* Wrapper */
+.product-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  min-height: 100vh;
+  background: #0e212e;
+}
+
+/* Card Container */
+.product-form-card {
+  background: black;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  border: 1px solid white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  margin-top: 75px;
+}
+
+/* Heading */
+.product-form-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: #ccc;
+  transition: border-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+
+
+.form-flex{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* Error Message */
+.error {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Min-width media queries (for tablet and up) */
+@media(max-width: 768px) {
+  .product-form-wrapper {
+    /* padding: 3rem 2rem; */
+  }
+
+  .product-form-card {
+    padding: 2rem;
+  }
+
+  .product-form-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 1.05rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1.05rem;
+  }
+  .form-flex{
+    gap: 50px;
+    align-items: center;
+  }
+}

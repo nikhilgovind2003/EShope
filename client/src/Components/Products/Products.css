@@ -1,0 +1,136 @@
+.product-card {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: scale(1.015);
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.12);
+}
+
+.product-image-wrapper {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  background: #f9fafb;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-image-wrapper:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.product-price {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #10b981;
+}
+
+.product-description {
+  color: #6b7280;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  max-height: 3.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.edit-button,
+.delete-button {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.edit-button {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.edit-button:hover {
+  background: #4338ca;
+}
+
+.delete-button {
+  background: #ef4444;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 1rem;
+  }
+
+  .product-price {
+    font-size: 0.95rem;
+  }
+
+  .product-description {
+    font-size: 0.8rem;
+  }
+
+  .edit-button,
+  .delete-button {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-buttons {
+    flex-direction: column;
+  }
+
+  .edit-button,
+  .delete-button {
+    width: 100%;
+  }
+}

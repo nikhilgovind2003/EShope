@@ -1,0 +1,121 @@
+/* Sidebar Styles */
+.sidebar {
+  background-color: black;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 300px;
+  margin-top: 70px;
+  height: 100vh;
+  color: white;
+}
+
+.radio-group {
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.radio-input {
+  accent-color: #007bff;
+  transform: scale(1.1);
+}
+
+/* Title */
+.filter-title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Each filter block */
+.filter-section {
+  margin-bottom: 25px;
+}
+
+/* Label text */
+.filter-label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Select and input */
+.select-input,
+.price-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.radio-input {
+  accent-color: #007bff;
+  transform: scale(1.1);
+}
+
+.reset-button {
+  margin-top: 16px;
+  padding: 10px;
+  width: 100%;
+  background-color: #e53e3e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #c53030;
+}
+
+
+.select-input:focus,
+.price-input:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .sidebar {
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .filter-title {
+    font-size: 1.4rem;
+  }
+}

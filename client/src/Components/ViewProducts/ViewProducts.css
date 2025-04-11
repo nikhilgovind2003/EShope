@@ -1,0 +1,59 @@
+.view-products-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  min-height: 100vh;
+}
+
+
+.products-main {
+  margin-top: 75px;
+  width: 100%;
+  padding: 20px;
+  background-color: #0e212e;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+
+
+
+
+.no-products {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #999;
+  margin-top: 20px;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+  .view-products-container {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .products-main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+}
