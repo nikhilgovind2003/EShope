@@ -46,6 +46,7 @@ const Login = () => {
       alert("User logged succesfully!")
       navigate('/'); // Navigate to home or dashboard
     } catch (error) {
+      alert(error.message)
       console.error('Login error:', error.response?.data?.message || error.message);
       setServerError(error.response?.data?.message || 'Login failed. Try again.');
     }

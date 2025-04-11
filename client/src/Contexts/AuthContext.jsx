@@ -4,7 +4,6 @@ export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [token, setToken] = useState('');
-console.log(token)
   useEffect(() => {
     const storedToken = localStorage.getItem('token');
     if (storedToken !== token) {

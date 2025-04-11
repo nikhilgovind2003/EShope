@@ -15,7 +15,6 @@ export default function ViewProducts() {
   } = useProductContext();
 
 const token = localStorage.getItem("token")
-  console.log(products)
 
   const getProducts = async () => {
     try {
