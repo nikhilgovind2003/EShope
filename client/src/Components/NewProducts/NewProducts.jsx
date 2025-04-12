@@ -100,7 +100,7 @@ const NewProducts = () => {
     const addProducts = async (productData, token) => {
         try {
             const response = await axios.post(
-                'http://localhost:4000/api/products',
+                'https://eshope-2.onrender.com/api/products',
                 productData,
                 {
                     headers: {
