@@ -40,7 +40,7 @@ const EditProduct = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const { data } = await axios.get(`https://eshope-2.onrender.com/api/products/${id}`, {
+                const { data } = await axios.get(`https://eshope-8z1d.onrender.com/api/products/${id}`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -73,7 +73,7 @@ const EditProduct = () => {
         if (!validateForm()) return;
       
         try {
-          const response = await axios.patch(`https://eshope-2.onrender.com/api/products/${id}`, formData, {
+          const response = await axios.patch(`https://eshope-8z1d.onrender.com/api/products/${id}`, formData, {
             headers: {
               Authorization: `Bearer ${token}`,
             },

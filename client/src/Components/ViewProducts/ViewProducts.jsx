@@ -18,7 +18,7 @@ const token = localStorage.getItem("token")
 
   const getProducts = async () => {
     try {
-      const response = await axios.get("https://eshope-2.onrender.com/api/products", {
+      const response = await axios.get("https://eshope-8z1d.onrender.com/api/products", {
         params: {
           category: selectedCategory,
           minPrice: 0,

@@ -40,7 +40,7 @@ const Register = () => {
 
   const registerUser = async () => {
     try {
-      await axios.post('https://eshope-2.onrender.com/api/users/register', {
+      await axios.post('https://eshope-8z1d.onrender.com/api/users/register', {
         name: formData.name,
         email: formData.email,
         password: formData.password,

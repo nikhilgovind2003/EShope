@@ -10,7 +10,7 @@ const Products = ({ product, onDelete }) => {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          `https://eshope-2.onrender.com/api/products/${product._id}`,
+          `https://eshope-8z1d.onrender.com/api/products/${product._id}`,
           {
             method: "DELETE",
             headers: {
@@ -37,7 +37,7 @@ const Products = ({ product, onDelete }) => {
       <div className="product-image-wrapper">
         <img
           className="product-image"
-          src={`https://eshope-2.onrender.com/uploads/${product.image}`}
+          src={`https://eshope-8z1d.onrender.com/uploads/${product.image}`}
           alt={product.name}
         />
       </div>
