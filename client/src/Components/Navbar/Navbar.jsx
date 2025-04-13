@@ -7,10 +7,9 @@ import { AuthContext } from '../../Contexts/AuthContext';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const token = localStorage.getItem('token')
-  const { logout } = useContext(AuthContext);
   const navigate = useNavigate()
   const handleLogout = () => {
-    logout()
+    localStorage.removeItem('token')
     alert("Logout Successfully!");
     navigate("/login"); // Then navigate
   };

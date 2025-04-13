@@ -40,9 +40,8 @@ const Login = () => {
 
     try {
       const response = await axios.post('https://eshope-8z1d.onrender.com/api/users/login', formData);
-      // You can store token in localStorage or Context if required
       console.log(response.data.token)
-      login(response.data.token)
+      localStorage.setItem('token', response.data.token)
       alert("User logged succesfully!")
       navigate('/'); // Navigate to home or dashboard
     } catch (error) {
