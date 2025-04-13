@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { AuthContext } from '../../Contexts/AuthContext';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -11,7 +10,6 @@ const Login = () => {
   const [errors, setErrors] = useState({});
   const [serverError, setServerError] = useState('');
 
-  const { login } = useContext(AuthContext)
 
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));

@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css'; // CSS file we'll write below
 import { X, Menu, User } from 'lucide-react';
-import { AuthContext } from '../../Contexts/AuthContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
